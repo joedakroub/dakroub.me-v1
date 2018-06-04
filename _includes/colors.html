@@ -1,0 +1,8 @@
+{% assign colors = include.colors | split: "," | reverse %}
+{% for color in colors %}
+<div class="bg-{{ color }} h1">&nbsp;</div>
+{% endfor %}
+<footer class="bg-black cf pa3 ttu white">
+  <h2 class="f6 fl fw9 ma0">{{ include.title | default: 'Title' }}</h2>
+  <span class="f6 fr tr">Today's Colors</span>
+</footer>

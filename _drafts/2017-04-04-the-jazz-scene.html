@@ -1,0 +1,29 @@
+---
+layout: post
+title: The Jazz Scene
+---
+{% capture content %}
+<div class="h-100 overflow-hidden relative w-100" style="font-size: 75vw">
+  <span class="absolute top-0 ttu z-1" style="transform-origin: 100% 100%; transform: rotate(-25deg) translate(5%, -25%)">
+    <span class="db fw7 lh-solid ttu white">J</span>
+  </span>
+  <span class="absolute o-50 top-0 ttu z-1" style="transform-origin: 100% 100%; transform: rotate(5deg) translate(-25%, 5%)">
+    <span class="db fw7 lh-solid hot-pink">a</span>
+  </span>
+  <span class="absolute top-0" style="transform-origin: 100% 100%; transform: rotate(-25deg) translate(95%, 0%)">
+    <span class="db fw7 lh-solid ttu white">z</span>
+  </span>
+  <span class="absolute o-50 top-0 ttu z-1" style="transform-origin: 100% 100%; transform: rotate(5deg) translate(65%, 0%)">
+    <span class="db fw7 lh-solid hot-pink">z</span>
+  </span>
+</div>
+{% endcapture %}
+
+<div class="bg-red">
+  <header class="pa4">
+    <h2 class="f-subheadline-l f1-m f2 fw4 lh-solid ma0 ttu white">{{ page.title }}</h2>
+    <h3 class="dark-red f-subheadline-l f1-m f2 fw4 lh-solid ma0 ttu">Francis Newton</h3>
+    <h4 class="f3-l f4-m f5 fw6 ma0 near-black">A Penguin Special</h4>
+  </header>
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+</div>

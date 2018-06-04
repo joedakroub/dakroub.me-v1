@@ -1,0 +1,73 @@
+---
+layout: post
+title: Cityscape
+draft: true
+---
+{% capture building1 %}
+<div class="absolute absolute--fill">
+  <div class="center h-100 pt4 pt5-ns w-15">
+    <div class="bg-hot-pink center h-5 w-75"></div>
+    <div class="b--hot-pink ba bg-purple bw1 bw2-ns h-100 w-100 white">
+      <div class="b--hot-pink bb bw3 h-20 relative">
+        <div class="absolute b--pink bt bw1 bw2-l f6 left-0 mt2 mt3-l w-75"></div>
+        <div class="dt h-100 w-100">
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-15"></div>
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-35"></div>
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-35"></div>
+          <div class="dtc w-15"></div>
+        </div>
+      </div>
+      <div class="b--hot-pink bb bw3 dt h-35 relative w-100">
+        <div class="absolute b--light-blue bt bw1 bw2-l f6 right-0 mt3 mt5-l w-75"></div>
+        <div class="dt h-100 w-100">
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-15"></div>
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-35"></div>
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-35"></div>
+          <div class="dtc w-15"></div>
+        </div>
+      </div>
+      <div class="b--hot-pink bb bw3 dt h-35 relative w-100">
+        <div class="absolute b--light-blue bt bw1 bw2-l f6 left-0 mt2 mt4-l w-35"></div>
+        <div class="absolute b--light-blue bt bw1 bw2-l f6 right-0 mt3 mt5-l w-10"></div>
+        <div class="dt h-100 w-100">
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-15"></div>
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-35"></div>
+          <div class="b--hot-pink dtc br bw1 bw2-ns w-35"></div>
+          <div class="dtc w-15"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture building2 %}
+<div class="absolute absolute--fill">
+  <div class="center h-100 relative w-20">
+    <div class="absolute bg-near-black bottom-0 h-40 w-100">
+      <div class="b--gold br bw3 h-100 mt3 o-70 pl2 pl3-l pt3 w-50">
+        <div class="b--dotted b--yellow bb-0 bl br-0 bt-0 bw2 h-100 mt4 o-70 w1"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture building3 %}
+<div class="absolute absolute--fill">
+  <div class="absolute b--light-green bl bw1 bw2-ns bottom-0 h-90 right-2 w-25">
+    <div class="b--light-green bg-green br bw1 bw2-ns h-100 o-50 right-0">
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture content %}
+<div class="bg-black h-100 overflow-hidden relative">
+  {{ building1 }}
+  {{ building2 }}
+  {{ building3 }}
+</div>
+{% endcapture %}
+
+{% include aspect_ratio.html content=content %}

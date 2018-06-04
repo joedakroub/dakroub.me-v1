@@ -1,0 +1,55 @@
+{% include head.html %}
+
+<body class="bg-light-purple black pa4 pa5-l sans-serif" style="background-image: url(img/checkerboard.png);">
+  <main class="center mw7-ns">
+    <header class="pb5 pr3">
+      {% include logo.html %}
+
+      <div class="dt-ns dt--fixed w-100">
+        <div class="dtc-ns">
+          <div class="b--hot-pink b--dashed ba bw5 center mv3 w-75">
+            {% include image.html alt="Picture of Joe Dakroub" class="grow w-100" src="img/joe.png" %}
+          </div>
+        </div>
+        <div class="dtc-ns v-mid">
+          <ol class="h-100 list ma0 overflow-hidden pa0 tc w-100">
+            <li class="b--dark-blue br bt bg-white bw3 grow">
+              <a class="bg-animate db f6 fw9 hover-bg-black-20 pa1 near-black no-underline tracked-tight ttu" href="{{ site.linkedin_url }}">Recruiters</a>
+            </li>
+            <li class="b--green bl bt bg-white bw3 grow">
+              <a class="bg-animate db f6 fw9 hover-bg-black-20 pa1 near-black no-underline tracked-tight ttu" href="{{ site.github_url }}">Software</a>
+            </li>
+            <li class="b--light-green br bt bg-white bw3 grow">
+              <a class="bg-animate db f6 fw9 hover-bg-black-20 pa1 near-black no-underline tracked-tight ttu" href="/resume.pdf">Résumé</a>
+            </li>
+            <li class="b--light-red bl bt bg-white bw3 grow">
+              <a class="bg-animate db f6 fw9 hover-bg-black-20 pa1 near-black no-underline tracked-tight ttu" href="mailto:{{ site.email }}">Electronic Mail</a>
+            </li>
+            <!-- {% if jekyll.environment == 'production' %}
+              <li class="b--mid-gray br bt bg-black bw3">
+                <iframe allowtransparency class="db f6 h2 w-100" frameborder="0" scrolling="no" src="http://joedakroub.webfactional.com/visits/"></iframe>
+              </li>
+              {% endif %} -->
+          </ol>
+        </div>
+      </div>
+    </header>
+
+    {{ content }}
+
+    <footer class="b--black bt bw3 pt2 mt5">
+      <ol class="list ma0 pa0 tc">
+        {% assign pages = site.pages | sort: 'date' | reverse %} {% assign index = 0 %} {% assign indexes = "" %} {% for current_page
+        in pages %} {% if current_page.layout == "default" %} {% assign indexes = indexes | append:index | append:"," %}
+        {% endif %} {% assign index = index | plus: 1 %} {% endfor %} {% assign indexes = indexes | split:"," %} {% assign
+        page_count = indexes | size %} {% for index in indexes %} {% assign index_int = index | plus: 0 %} {% assign post
+        = pages[index_int] %}
+        <li class="dib mb2 mr2">
+          <a class="br-100 dtc f6 h2 link tc v-mid w2 white {% if page.url == post.url %}b bg-hot-pink hover-black{% else %}bg-black hover-hot-pink{% endif %}"
+            href="{{ post.path }}">{{ page_count }}</a>
+        </li>
+        {% assign page_count = page_count | minus: 1 %} {% endfor %}
+      </ol>
+    </footer>
+  </main>
+  {% include foot.html %}

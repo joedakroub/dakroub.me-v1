@@ -1,0 +1,35 @@
+---
+layout: post
+title: HAL 9000
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="b--light-gray ba br-100 bw1 bw2-ns h-100 w-100">
+  <div class="b--gray ba br-100 bw3 bw4-ns dt h-100 w-100">
+    <div class="b--dark-gray ba br-100 bw2 bw3-ns dt h-100 w-100">
+      <div class="dtc v-mid">
+        <div class="bg-dark-red br-100 center dt h-85 w-85">
+          <div class="dtc v-mid">
+            <div class="bg-red br-100 center dt h-70 w-70">
+              <div class="dtc v-mid">
+                <div class="bg-orange br-100 center dt h-60 w-60">
+                  <div class="dtc v-mid">
+                    <div class="bg-yellow br-100 center h-35 w-35"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-near-black pa4 pa5-ns">
+  <div class="center mb4 mb5-ns w-50">
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+  </div>
+  <h2 class="avenir f4-ns f5 fw2-l fw4 i ma0 tc white">&ldquo;Foolproof and incapable of error.&rdquo;</h2>
+</div>

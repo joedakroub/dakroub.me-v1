@@ -1,0 +1,79 @@
+---
+layout: post
+media: Tachyons CSS
+title: Psychoanalysis and Religion
+---
+{% capture box_1 %}
+<div class="h-100 w-100">
+  <div class="bg-purple h-50"></div>
+  <div class="bg-orange h-50 relative">
+    <h3 class="absolute bottom-1-ns bottom-0 f-subheadline-l f1-m f2 fw7 left-1-ns left-0 ma0"><small class="db f4-l f5-m f6 ml5-l ml4-m ml3 nb4-l nb3-m nb2">Erich</small> Fromm</h3>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture box_2 %}
+<div class="cf h-100 w-100">
+  <div class="bg-orange fl h-100 w-50"></div>
+  <div class="bg-purple fl h-100 w-50"></div>
+</div>
+{% endcapture %}
+
+{% capture box_3 %}
+<div class="cf h-100 w-100">
+  <div class="bg-purple fl h-100 w-50"></div>
+  <div class="bg-orange fl h-100 w-50"></div>
+</div>
+{% endcapture %}
+
+{% capture box_4 %}
+<div class="h-100 w-100">
+  <div class="bg-purple h-50"></div>
+  <div class="bg-orange h-50 relative">
+    <h2 class="absolute bottom-1 f2-l f3-m f6 fw7 left-1 lh-title ma0">{{ page.title }}</h2>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture box_5 %}
+<div class="h-100 w-100">
+  <div class="bg-purple h-50"></div>
+  <div class="bg-orange h-50 relative">
+    <h6 class="absolute bottom-1 f5-l f6-m f7 fw7 ma0">a Yale Paperbound $1.25 (8s. 6d. net)</h6>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture box_6 %}
+<div class="cf h-100 w-100">
+  <div class="bg-purple fl h-100 w-50"></div>
+  <div class="bg-orange fl h-100 w-50"></div>
+</div>
+{% endcapture %}
+
+<div class="athelas bg-white near-black pa3-l pa1">
+  <div class="dt w-100">
+    <div class="dtc pa3-l pa2 w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=box_1 %}
+    </div>
+    <div class="dtc pa3-l pa2 w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=box_2 %}
+    </div>
+  </div>
+  <div class="dt w-100">
+    <div class="dtc pa3-l pa2 w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=box_3 %}
+    </div>
+    <div class="dtc pa3-l pa2 w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=box_4 %}
+    </div>
+  </div>
+  <div class="dt w-100">
+    <div class="dtc pa3-l pa2 w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=box_5 %}
+    </div>
+    <div class="dtc pa3-l pa2 w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=box_6 %}
+    </div>
+  </div>
+</div>

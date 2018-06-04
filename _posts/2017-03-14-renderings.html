@@ -1,0 +1,35 @@
+---
+layout: post
+title: Renderings - Unfinished
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="h-100 overflow-hidden relative rotate-45 w-100">
+  <div class="absolute h-100 mt5-ns mt4 rotate-315 w-100">
+    {% for i in (1..32) %}
+    <div class="b--green bt lh-solid">&nbsp;</div>
+    {% endfor %}
+  </div>
+  <div class="absolute h-100 nt5-ns rotate-135 w-100">
+    {% for i in (1..32) %}
+    <div class="b--dark-pink bt lh-solid">&nbsp;</div>
+    {% endfor %}
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white ph3 pv2">
+  <h2 class="f-headline-l f-subheadline-m f1 fw7 ma0 near-black tracked-tight ttl">Renderings</h2>
+
+  <div class="mv6-ns mv5">
+    <div class="center w-two-thirds">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+    </div>
+  </div>
+
+  <footer class="cf mb2">
+    <h3 class="f2-ns f3 fw7 fl-ns lh-solid ma0 near-black pr4 ttl w-50-ns">Critical essays <br>on a century <br>of modern art</h3>
+    <h4 class="f2-ns f3 fw7 fl-ns lh-solid ma0 near-black ttl w-50-ns">By Max Kozloff</h4>
+  </footer>
+</div>
+<h2 class="tc">{{ page.title }}</h2>

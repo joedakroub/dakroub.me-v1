@@ -1,0 +1,46 @@
+---
+layout: post
+title: Robert Pinget - Plays - Volume 2
+media: Tachyons CSS
+---
+{% capture circle %}
+<div class="bg-white br-100 h-100 w-100"></div>
+{% endcapture %}
+
+{% capture content %}
+<div class="bg-green br-100 h-100 w-100">
+  <div class="dt h-100 w-100">
+    <div class="dtc tc v-mid">
+      <div class="bg-near-black dib h-two-thirds v-mid w-50">
+        <div class="dt h-100 w-100">
+          <div class="dtc tc v-mid">
+            <div class="dib w-two-thirds">
+              {% include aspect_ratio.html aspect-ratio="1x1" content=circle %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white">
+  <header class="cf pa4 pb2">
+    <h2 class="avenir blue f-subheadline-l f1-m f2 fw7 ma0 tc">Robert Pinget</h2>
+    <div class="fr w-60">
+      <ol class="list ma0 mb3 mt4 pa0 near-black">
+        <li class="lh-copy"><h4 class="avenir f4-l f5-m f6 fw7 ma0">Architruc</h4></li>
+        <li class="lh-copy"><h4 class="avenir f4-l f5-m f6 fw7 ma0">About Mortin</h4></li>
+        <li class="lh-copy"><h4 class="avenir f4-l f5-m f6 fw7 ma0">The Hypothesis</h4></li>
+      </ol>
+      <h3 class="avenir f1-l f2-m f3 fw7 light-green ma0 mb2">Plays</h3>
+      <h5 class="avenir f4-l f3-m f4 fw7 blue ma0">Volume 2</h5>
+    </div>
+  </header>
+  <div class="b--light-green bt bw4-ns bw3">
+    <div class="b--green bg-blue bt bw5-ns bw4 ph4 pv3">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+    </div>
+  </div>
+</div>

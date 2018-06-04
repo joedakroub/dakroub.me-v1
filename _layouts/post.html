@@ -1,0 +1,22 @@
+{% capture url %}
+https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ page.url }}&text=&ldquo;{{ page.title }}&rdquo; — Joe Dakroub
+{% endcapture %}
+
+{% include head.html %}
+  <body class="bg-light-purple black ph4 ph6-l sans-serif" style="background-image: url(img/checkerboard.png);">
+    <main class="center mw7-ns">
+      {% include logo.html %}
+      <div class="dt pv5-ns vh-100 w-100">
+        <article class="dtc v-mid" id="{{ page.slug }}">
+          {{ content }}
+
+          <footer class="cf pv2">
+            {% if page.media %}
+            <span class="f6 fw5 fr lh-copy"><b>Media:</b> {{ page.media }}</span>
+            {% endif %}
+            {% include twitter_button.html %}
+          </footer>
+        </article>
+      </div>
+    </main>
+{% include foot.html %}

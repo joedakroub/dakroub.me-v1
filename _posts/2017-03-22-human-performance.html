@@ -1,0 +1,51 @@
+---
+layout: post
+media: Tachyons CSS, Raw CSS
+title: Human Performance
+---
+{% capture circle_1 %}
+<div class="bg-near-black br-100 h-100 overflow-hidden w-100" style="transform: rotate(320.5deg)">
+  <div class="bg-washed-yellow center h-100 w-third"></div>
+</div>
+{% endcapture %}
+
+{% capture circle_2 %}
+<div class="bg-orange br-100 h-100 overflow-hidden w-100" style="transform: rotate(320.5deg)">
+  <div class="bg-near-black center h-100 w-third"></div>
+</div>
+{% endcapture %}
+
+{% capture content %}
+<div class="dt h-100 w-100">
+  <div class="bg-orange dtc relative">
+    <div class="absolute pa1 top-1 top-2-ns w-100">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=circle_1 %}
+    </div>
+    <div class="bg-near-black center h-100 w-third"></div>
+  </div>
+  <div class="bg-near-black dtc relative">
+    <div class="absolute pa1 top-1 top-2-ns w-100">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=circle_2 %}
+    </div>
+    <div class="bg-washed-yellow center h-100 w-third"></div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-washed-yellow near-black pa3-ns pa2">
+  <header class="b--near-black ba">
+    <h2 class="b--near-black bb f2 fw7 lh-title ma0 pb4-ns pb3 ph3-ns ph2 pt2-ns pt1 ttl">Human <br>Performance</h2>
+    <div class="dt w-100">
+      <div class="dtc ph3-ns ph2 pv2-ns pv1 v-top">
+        <h3 class="dtc f5-ns f6 fw5 lh-title ma0 ttu">Fitts <br>and <br>Posner</h3>
+      </div>
+      <div class="b--near-black br dtc pb4-ns pb3 ph2 ph3-ns pt2-ns pt1 v-top w-30-l w-40-m w-50">
+        <h4 class="dtc f5-ns f6 fw5 lh-title ma0 ttu">Basic Concepts<br> In Psychology<br>Series</h4>
+      </div>
+      <div class="dtc tr pa3-ns pa2 v-top w-20">
+        {% include image.html alt="Psychology" class="w2-ns w1" src="img/psychology.svg" %}
+      </div>
+    </div>
+  </header>
+  {% include aspect_ratio.html aspect-ratio="3x4" content=content %}
+</div>

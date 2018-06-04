@@ -1,0 +1,42 @@
+---
+layout: post
+media: Tachyons CSS, Raw CSS
+title: Goodbye, Jehovah
+---
+{% capture content %}
+<div class="h-100 w-100">
+  <div class="h-100 relative w-75">
+    <div class="absolute bg-yellow h-15 overflow-hidden w-100" style="top: 27%;"></div>
+    <div class="bg-yellow center h-100 w-25"></div>
+  </div>
+  <div class="absolute h-100 right-1 w-90" style="bottom: -15%; mix-blend-mode: multiply; transform: rotate(12deg);">
+    <div class="absolute bg-hot-pink h-15 overflow-hidden w-100" style="top: 27%;"></div>
+    <div class="bg-hot-pink center h-100 w-25"></div>
+  </div>
+  <div class="absolute h-100 left-1 w-75" style="bottom: -30%; mix-blend-mode: multiply; transform: rotate(40deg);">
+    <div class="absolute bg-purple h-15 overflow-hidden w-100" style="top: 27%;"></div>
+    <div class="bg-purple center h-100 w-25"></div>
+  </div>
+  <div class="absolute h-100 right-2 w-75" style="bottom: -40%; mix-blend-mode: multiply; transform: rotate(60deg);">
+    <div class="absolute bg-black h-15 overflow-hidden w-100" style="top: 27%;"></div>
+    <div class="bg-black center h-100 w-25"></div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-washed-yellow overflow-hidden">
+  <header class="cf relative z-1">
+    <div class="dt fr pa3 w-80">
+      <div class="dtc v-top w-75">
+        <h3 class="f3-ns f5 fw7 lh-solid ma0">William<br>Robert<br>Miller</h3>
+      </div>
+      <div class="dtc v-top w-25">
+        <h2 class="f-subheadline-l f1-m f2 fw6 lh-solid ma0 mb4 tracked-tight">Goodbye,<br><span class="db nt2">Jehovah</span></h2>
+        <p class="f5-ns f6 lh-title ma0 ml3-ns ml2">A Survey of <br>the New Directions <br>in Christianity</p>
+      </div>
+    </div>
+  </header>
+  <div class="nt5">
+    {% include aspect_ratio.html aspect-ratio="3x4" content=content %}
+  </div>
+</div>

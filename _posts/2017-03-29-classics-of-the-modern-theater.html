@@ -1,0 +1,28 @@
+---
+layout: post
+media: Tachyons CSS
+title: Classics of The Modern Theater
+---
+{% capture content %}
+<div class="h-100 w-100">
+  <div class="bg-white center h-100 w1"></div>
+</div>
+{% endcapture %}
+
+<div class="bg-green near-black">
+  <header class="bg-white pb3-ns pb2 ph5-l ph4-m ph3 pt4-ns pt3">
+    <h4 class="f3-l f4-m f6 fw7 green ma0 mb5-ns mb4 tr">From Ibsen to Albee: Eleven Major Plays</h4>
+    <div class="mb4 relative">
+      <h2 class="f-subheadline-ns f1 fw8 lh-solid ma0 mb0-ns mb2 ttu">Classics <br>of The Modern <br>Theater</h2>
+      <h3 class="absolute-l georgia bottom-0 f4 fw5 green i ma0 right-0">Realism and After</h3>
+    </div>
+    <h5 class="f4-ns f5 fw4 athelas ma0 tracked ttu">Edited by Alvin B. Kernan</h5>
+  </header>
+  <div class="pv5">
+    <div class="bg-white-30 center pv3 w-two-thirds">
+      <div class="bg-white-30 center pv3 w-two-thirds">
+      {% include aspect_ratio.html aspect-ratio="3x4" content=content %}
+      </div>
+    </div>
+  </div>
+</div>

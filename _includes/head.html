@@ -1,0 +1,32 @@
+{% capture image %}{{ site.url }}/img/thumbs/{% if (page.image) %}{{ page.image }}{% else %}{{ page.date }}.png{% endif %}{% endcapture %}
+{% capture image_alt %}Work for {{ page.date }}{% endcapture %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} - {% else if page.date %}{{ page.date | date: "%b%d-%Y" }} - {% endif %}Joe Dakroub | Digital Creator and Problem Solver</title>
+
+    <!-- So Meta -->
+    <meta name="description" content="{{ page.description | default: 'Joe Dakroub | Digital Creator and Problem Solver' }}">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Twit -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@joedakroub">
+    <meta name="twitter:creator" content="@joedakroub">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: '' }}">
+    <meta name="twitter:image" content="{{ image }}">
+    <meta name="twitter:image:alt" content="{{ page.image_alt | default: image_alt }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/css-cursors.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+    {% if style %}{{ style }}{% endif %}
+
+    <!-- Other -->
+    <link rel="canonical" href="https://{{ site.url }}{{ page.url }}">
+  </head>

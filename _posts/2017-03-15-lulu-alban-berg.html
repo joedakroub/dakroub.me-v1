@@ -1,0 +1,41 @@
+---
+layout: post
+title: Lulu - Alban Berg
+media: Tachyons CSS
+---
+{% capture checkerboard %}
+<div class="absolute absolute--fill bg-near-white bw5 rotate-45 z-0">
+  <div class="dt dt--fixed h-third w-100">
+    <div class="bg-near-black dtc"></div>
+    <div class="dtc relative">
+      <h1 class="absolute absolute--fill dark-red f-headline-l f1 fw2 ma0 mt5-l mt4 rotate-315 tr tracked-mega ttu">lu</h1>
+    </div>
+    <div class="bg-near-black dtc"></div>
+  </div>
+  <div class="dt dt--fixed h-third w-100">
+    <div class="dtc relative">
+      <h1 class="absolute absolute--fill dark-red f-headline-l f1 fw2 ma0 mt5-l mt4 rotate-315 tr tracked-mega ttu">Lu</h1>
+    </div>
+    <div class="bg-near-black dtc"></div>
+    <div class="dtc"></div>
+  </div>
+  <div class="dt dt--fixed h-third w-100">
+    <div class="bg-near-black dtc"></div>
+    <div class="dtc"></div>
+    <div class="bg-near-black dtc"></div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture content %}
+<div class="h-100 overflow-hidden relative w-100">
+  <div class="h-100 overflow-hidden relative z-1">
+    <h2 class="absolute avenir bottom-2-l bottom-1 dark-red fw2-l fw3 f4-l f5-m f6 ma0 tc ttl w-100">Alban Berg</h2>
+  </div>
+  {{ checkerboard }}
+</div>
+{% endcapture %}
+
+<div class="bg-near-white">
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+</div>

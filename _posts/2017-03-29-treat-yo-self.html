@@ -1,0 +1,24 @@
+---
+layout: post
+media: Tachyons CSS, Raw CSS
+title: Treat Yo Self
+description: "My ode to Vaporwave style. I have a love hate with the 90s, but this one was fun to make. I really like Vaporwave, though I am not sure why."
+image: treat-yo-self.png
+image_alt: "Depicts a marble bust of a pink child, looking at a bottle of Herbal Essences shampoo, some red dice, and a Motorola StarTech flip phone hovering over a blue and black grid field. Flying toasters and a Buy Now button seal the deal."
+---
+<div class="b--bb cover overflow-hidden relative" style="background: url('img/after-dark.png'), url('img/the-grid.jpg') center center no-repeat">
+  <div style="transform: rotateX(25deg);">
+    {% include image.html class="w-50" src="img/marble-bust.png" %}
+  </div>
+  <button class="absolute b--outset bg-light-silver bottom-1 bw2 f5-ns f6 pa2-ns pa1 right-1 z-1">Buy Now!</button>
+  <div class="absolute absolute--fill bg-hot-pink" style="mix-blend-mode: color-burn;"></div>
+  <div class="absolute absolute--fill" style="background: url('img/flip-phone.png') 80% 90% no-repeat; background-size: 25% 45%; mix-blend-mode: luminosity;"></div>
+  <div class="absolute absolute--fill">
+    <div class="dt h-100 w-50" style="background: url('img/red-dice.png') 10% 40% no-repeat; background-size: 15% 10%;">
+      <div class="dtc pb4-ns pb2 tr v-btm">
+        {% include image.html class="w-15" src="img/herbal-essences.png" %}
+      </div>
+    </div>
+  </div>
+  <h2 class="absolute f-subheadline-ns f2 helvetica light-green ma0 normal tc top--2-ns top--1 ttu w-100" style="transform: rotateX(45deg);">Treat Yo Self</h2>
+</div>

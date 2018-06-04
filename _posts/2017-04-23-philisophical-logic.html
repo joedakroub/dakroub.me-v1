@@ -1,0 +1,28 @@
+---
+layout: post
+media: Tachyons CSS
+title: Philosophical Logic
+description: "Another classic Oxford book from the 60s. Orange, dark red, dark pink and white colors."
+image: philisophical-logic.png
+---
+{% capture content %}
+<div class="dt h-100 w-100">
+  <div class="bg-orange dtc pl5-ns pl4 pv5-ns pv4">
+    <div class="bg-white h-100 w-100"></div>
+  </div>
+  <div class="bg-dark-red dtc w-15"></div>
+  <div class="bg-dark-pink dtc pr5-ns pr4 pv5-ns pv4">
+    <div class="bg-white h-100 w-100"></div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white pa3-ns pa2">
+  <header class="mb2-ns mb1 near-black">
+    <h2 class="f-subheadline-l f1-m f2 fw7 georgia lh-solid ma0 mb5-ns mb4 tracked-tight ttu">Philisophical <br>Logic</h2>
+    <h5 class="f4-l f5-m f7 fw4 ma0 ttu">Edited By</h5>
+    <h3 class="f2-ns f4 fw5 georgia ma0 mb4-ns mb3 tracked-tight ttu">P.F. Strawson</h3>
+    <h5 class="f4-l f5-m f7 fw7 ma0 orange ttu">Oxford Readings in Philosophy</h5>
+  </header>
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+</div>

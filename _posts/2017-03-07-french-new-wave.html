@@ -1,0 +1,14 @@
+---
+layout: post
+title: French New Wave
+media: Tachyons CSS
+---
+<div class="bg-black relative">
+  <div class="b--dark-pink br bw4 bw5-ns tr">
+    {% capture content %}
+    <div class="b--washed-red b-lazy br bw4 bw5-ns cover h-100 z-0" style="background: #ff41b4 url(img/newwave.jpg) right top no-repeat; background-blend-mode: multiply;"></div>
+    {% endcapture %}
+    {% include aspect_ratio.html aspect-ratio="9x16" content=content %}
+  </div>
+  <h2 class="absolute bottom-1 f1-ns f2 fw2 pink left-1 lh-solid ma0 right-0 ttl z-1">French New Wave</h2>
+</div>

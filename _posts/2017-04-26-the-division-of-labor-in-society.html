@@ -1,0 +1,40 @@
+---
+layout: post
+media: Tachyons CSS
+title: The Division of Labor in Society
+---
+{% capture content %}
+<div class="dt h-100 w-100">
+  <div class="bg-yellow dtc w-third">
+  </div>
+  <div class="dtc">
+    <div class="dt h-30 w-100">
+      <div class="bg-purple dtc w-25"></div>
+      <div class="bg-yellow dtc w-60"></div>
+      <div class="bg-pink dtc"></div>
+    </div>
+    <div class="dt h-70 w-100">
+      <div class="dtc w-60">
+        <div class="bg-light-red h-30"></div>
+        <div class="dt h-70 w-100">
+          <div class="bg-light-green dtc w-80"></div>
+          <div class="dtc w-20">
+            <div class="bg-yellow h-35"></div>
+            <div class="bg-dark-red h-15"></div>
+            <div class="bg-green h-50"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-purple dtc"></div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white">
+  <header class="pa4-ns pa3">
+    <h2 class="center f-subheadline-ns f2 fw7 lh-solid ma0 mb3-ns mb2 purple tc tracked-tight ttu">The <br>Division <br>of Labor <br>in Society</h2>
+    <h3 class="center f2-ns f4 ma0 red tc">Emile Durkheim</h3>
+  </header>
+  {% include aspect_ratio.html aspect-ratio="4x3" content=content %}
+</div>

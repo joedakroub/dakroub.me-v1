@@ -1,0 +1,6 @@
+{% assign alt = include.alt | default: ' ' | rstrip %}
+{% assign class = include.class | default: ' ' | rstrip %}
+{% assign src = include.src | default: ' ' | rstrip %}
+{% assign title = include.title | default: ' ' | rstrip %}
+
+<img alt="{{ alt }}" class="b-lazy v-mid {{ class }}" data-src="{{ src }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="{{ title }}">

@@ -1,0 +1,9 @@
+<div class="pv2 relative tc bg-{{ include.background-color | default: 'white' }}">
+  <h2 class="f2 fw9 ma0 mb2 ph3 tl ttu {{ include.title-color | default: 'black' }}">Death Screen</h2>
+  <figure class="ma0">
+    <div class="ph3">
+      {% include image.html src=include.url %}
+    </div>
+  </figure>
+  <figcaption class="f6 fw7 {{ include.text-color | default: 'gray' }} mt2 pa2 tracked ttu">{{ include.title | default: 'Title' }}</figcaption>
+</div>

@@ -1,0 +1,142 @@
+---
+layout: post
+title: CBC 1974 Annual Report - Unfinished
+media: Tachyons CSS, Raw CSS
+---
+{% capture circle_dark_red %}
+<div class="bg-dark-blue h-100 pa1 pa2-ns w-100">
+  <div class="bg-dark-red br-100 h-100 w-100">
+    <div class="dt h-100 w-100">
+      <div class="dtc tc v-mid">
+        <span class="bg-dark-blue br-100 dib h-third w-third"></span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture circle_gold %}
+<div class="bg-dark-blue h-100 pa1 pa2-ns w-100">
+  <div class="bg-gold br-100 h-100 w-100">
+    <div class="dt h-100 w-100">
+      <div class="dtc tc v-mid">
+        <span class="bg-dark-blue br-100 dib h-third w-third"></span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture circle_orange %}
+<div class="bg-dark-blue h-100 pa1 pa2-ns w-100">
+  <div class="bg-orange br-100 h-100 w-100">
+    <div class="dt h-100 w-100">
+      <div class="dtc tc v-mid">
+        <span class="bg-dark-blue br-100 dib h-third w-third"></span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture circle_red %}
+<div class="bg-dark-blue h-100 pa1 pa2-ns w-100">
+  <div class="bg-red br-100 h-100 w-100">
+    <div class="dt h-100 w-100">
+      <div class="dtc tc v-mid">
+        <span class="bg-dark-blue br-100 dib h-third w-third"></span>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture grid1 %}
+<div class="h-100 overflow-hidden relative w-100">
+  {{ circle_gold }}
+  <div class="absolute absolute--fill" style="bottom: -17%; top: 17%;">
+  {{ circle_orange }}
+  </div>
+  <div class="absolute absolute--fill" style="bottom: -50%; top: 50%;">
+  {{ circle_red }}
+  </div>
+</div>
+{% endcapture %}
+
+{% capture grid2 %}
+<div class="h-100 w-100">
+  <div class="dt h-50 w-100">
+    <div class="dtc w-50">
+    </div>
+    <div class="dtc overflow-hidden relative v-top w-50">
+      <div class="bg-gray absolute overflow-hidden top-1 top-2-ns" style="height: 200%; width: 200%;">
+        {{ circle_gold }}
+      </div>
+    </div>
+  </div>
+  <div class="dt h-50 w-100">
+    <div class="dtc overflow-hidden relative v-top w-50">
+      <div class="bg-gray absolute left-1 left-2-ns" style="height: 200%; width: 200%;">
+        {{ circle_gold }}
+      </div>
+    </div>
+    <div class="dtc overflow-hidden v-top w-50">
+      <div style="height: 200%; width: 200%;">
+        {{ circle_orange }}
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture content %}
+<div class="dt h-third relative w-100">
+  <div class="dtc h-100 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid2 %}
+  </div>
+  <div class="dtc h-100 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid1 %}
+  </div>
+  <div class="dtc h-100 rotate-90 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid2 %}
+  </div>
+</div>
+<div class="dt h-third relative w-100">
+  <div class="dtc h-100 rotate-270 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid1 %}
+  </div>
+  <div class="dtc h-100 v-mid w-third">
+    {{ circle_dark_red }}
+  </div>
+  <div class="dtc h-100 rotate-90 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid1 %}
+  </div>
+</div>
+<div class="dt h-third relative w-100">
+  <div class="dtc h-100 rotate-270 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid2 %}
+  </div>
+  <div class="dtc h-100 rotate-180 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid1 %}
+  </div>
+  <div class="dtc h-100 rotate-180 v-mid w-third">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=grid2 %}
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-dark-blue pa3">
+  <div class="center dt mb4 w-70-l w-90 white">
+    <div class="dtc w-40-l w-third">
+      <h2 class="f4-l f6 fw4 lh-title">1974-1975<br>Annual<br>Report</h2>
+    </div>
+    <div class="dtc">
+      <h2 class="f4-l f6 fw4 lh-title w-50">Canadian<br>Broadcasting<br>Corporation</h2>
+    </div>
+    <div class="dtc">
+      <h2 class="f4-l f6 fw4 lh-title w-50">Societè<br>Radio-<br>Canada</h2>
+    </div>
+  </div>
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+</div>
+<h2 class="tc">{{ page.title }}</h2>

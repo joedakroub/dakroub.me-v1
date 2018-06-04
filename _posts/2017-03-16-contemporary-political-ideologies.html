@@ -1,0 +1,23 @@
+---
+layout: post
+title: Contemporary Political Ideologies
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="h-100 w-100">
+  <div class="bg-white br-100 dt h-100 w-100">
+    <div class="dtc tr v-mid">
+      <span class="bg-dark-red br-100 dib h-40 mr2-l mr1 overflow-hidden w-40"></span>
+    </div>
+  </div>
+</div>
+{% endcapture content %}
+
+<div class="bg-dark-blue pa5-l pa4 system-sans-serif white">
+  <h2 class="f2-l f3 ma0 mb2 w-50">{{ page.title }}</h2>
+  <h6 class="b--white bb bt dib f6-l f7 ma0 mb4-l mb3 ttl">Fifth Edition</h6>
+  <div class="mb5-l mb4">
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+  </div>
+  <h3 class="f3-l f4 ma0 tr">Lyman Tower Sargent</h3>
+</div>

@@ -1,0 +1,26 @@
+---
+layout: post
+title: C-3P☉
+---
+{% capture content %}
+<div class="b--black-50 ba bw3 br-100 h-100 overflow-hidden w-100">
+  <div class="b--white-50 ba bw1 br-100 bg-yellow dt h-100 overflow-hidden relative w-100">
+    <div class="dtc tc overflow-hidden v-mid">
+      <div class="bg-black br-100 dib h2 h3-ns w2 w3-ns"></div>
+      <div class="absolute absolute--fill">
+        {% for i in (1..8) %}
+        <div class="b--black-10 bg-gold bl bw1 dib h-100 ml3 ml4-ns">&nbsp;</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-gold dt pa3 w-100">
+  <div class="dtc tr v-mid">
+    <h2 class="black-50 dib f-subheadline-l f1 fw1 helvetica ma0 nowrap pr3 tr tracked v-mid w-50">C-3P</h2><div class="dib v-mid w-50">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+    </div>
+  </div>
+</div>

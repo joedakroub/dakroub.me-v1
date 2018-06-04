@@ -1,0 +1,5 @@
+{% assign class = include.class | default: ' ' | rstrip %}
+{% assign content = include.content | default: ' ' | rstrip %}
+<div class="aspect-ratio aspect-ratio--{{ include.aspect-ratio | default: '16x9' }} {{ class }}">
+  <div class="aspect-ratio--object z-0">{{ content }}</div>
+</div>

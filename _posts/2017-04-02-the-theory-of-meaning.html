@@ -1,0 +1,26 @@
+---
+title: The Theory of Meaning
+layout: post
+media: Tachyons CSS
+description: "Mono-chromatic blue palette on a white background with classic type. Simple and elegant."
+image: the-theory-of-meaning.png
+---
+{% capture content %}
+<div class="bg-dark-blue h-100 pa4-ns pa3 w-100">
+  <div class="bg-black-20 br-100 dt h-100 w-100">
+    <div class="dtc tc v-mid">
+      <div class="bg-blue dib h-60 w-60"></div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white pa3">
+  <header class="pb2">
+    <h2 class="f-subheadline-l f1-m f2 fw5 garamond lh-solid ma0 mb3 near-black ttu">The <br>Theory of <br>Meaning</h2>
+    <h5 class="f4-l f5-m f6 fw4 ma0 near-black mb2-ns mb1 tracked ttu">Edited by</h5>
+    <h3 class="f2-l f3-m f4 fw4 ma0 garamond mb4-ns mb3 near-black ttu">G.H.R. Parkinson</h3>
+    <h4 class="blue f4-l f5-m f6 fw4 ma0 ttu"><strong>Oxford</strong> Readings in Philosophy</h4>
+  </header>
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+</div>

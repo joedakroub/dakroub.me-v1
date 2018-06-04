@@ -1,0 +1,22 @@
+{% assign background_color = include.background-color | default: 'white' | rstrip %}
+{% assign container_class = include.container-class | default: ' ' | rstrip %}
+{% assign foreground_color = include.foreground-color | default: 'black' | rstrip %}
+{% assign inner_container_class = include.inner-container-class | default: ' ' | rstrip %}
+{% assign subtitle = include.subtitle | default: 'Subtitle' | rstrip %}
+{% assign title = include.title | default: 'Title' %}
+{% assign url = include.url | default: ' ' | rstrip %}
+
+<div class="courier tc bg-{{ background_color }} {{ foreground_color }} {{ container_class }}">
+  <div class="dt pa4 tc w-100 {{ inner_container_class }}">
+    <div class="dtc v-mid">
+      <a class="link" href="{{ url }}">
+        <h2 class="f2 lh-title normal {{ foreground_color }}">Site of the Day:</h2>
+        <h3 class="f3 lh-title {{ foreground_color }}">{{ title }}</h3>
+        <h4 class="f4 center lh-copy normal w-two-thirds-ns {{ foreground_color }}">{{ subtitle }}</h4>
+        <div class="center h3 mv3 tc w3">
+          {% include image.html alt="So Fire!" src="img/fire.gif" %}
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

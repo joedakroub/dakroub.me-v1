@@ -1,0 +1,29 @@
+---
+layout: post
+title: Technology - Fire in a Dark World
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="h-100 w-100">
+  <div class="bg-white br-100 h-100 overflow-hidden w-100">
+    <div class="bg-moon-gray br-100 center h-85 mt2 overflow-hidden w-85">
+      <div class="bg-light-silver br-100 center h-85 mt2 overflow-hidden w-85">
+        <div class="bg-silver br-100 center h-85 mt2 overflow-hidden w-85">
+          <div class="bg-gray br-100 center h-85 mt2 overflow-hidden w-85">
+            <div class="b--orange ba bg-near-black br-100 bw4-ns bw3 center h-75 mt2 overflow-hidden w-75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-gray overflow-hidden">
+  <h2 class="f-headline-l f-subheadline-m f1 fw7 lh-solid mb0 mh4-ns mh3 mt2-ns mt1 nb2-ns nb1 tracked-tight white">Technology</h2>
+  <h3 class="f2-l f3-m f4 fw4 lh-solid ma0 mb2-ns mb1 mh4-ns mh3 pl3-ns pl2 near-black">Fire in a Dark World</h3>
+  <h4 class="f4-l f5-m f6 fw5 lh-solid ma0 mb2-ns mb1 mh4-ns mh3 pl3-ns pl2 white">Perry Pascarella</h4>
+  <div class="mb3 nl4-ns nl3 nr4-ns nr3">
+    {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+  </div>
+</div>

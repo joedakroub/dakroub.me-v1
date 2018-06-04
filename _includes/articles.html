@@ -1,0 +1,32 @@
+{% assign formatted_date = include.page-date | date: "%b%d-%Y" %}
+<h1 class="b--black bb bw3 fw9 ma0 mb5 pb0 ttu">{{ formatted_date }}</h1>
+
+{% for post in site.posts %}
+{% capture page_date %}{{ include.page-date | date: '%Y-%m-%d' }}{% endcapture %}
+{% capture post_date %}{{ post.date | date: '%Y-%m-%d' }}{% endcapture %}
+
+{% if page_date == post_date %}
+
+{% capture url %}
+https://twitter.com/intent/tweet?url={{ site.url }}{{ site.baseurl }}{{ post.url }}&text=&ldquo;{{ post.title }}&rdquo; — Joe Dakroub
+{% endcapture %}
+
+<article class="mb5" id="{{ post.slug }}">
+  {% if post.hide_link %}
+  {{ post.content }}
+  {% else %}
+  <a class="black db link" href="{{ post.url }}">{{ post.content }}</a>
+  {% endif %}
+
+  {% if post.hide_footer %}
+  {% else %}
+  <footer class="cf pv2">
+    {% if post.media %}
+    <span class="f6 fw5 fr lh-copy"><b>Media:</b> {{ post.media }}</span>
+    {% endif %}
+    {% include twitter_button.html %}
+  </footer>
+  {% endif %}
+</article>
+{% endif %}
+{% endfor %}

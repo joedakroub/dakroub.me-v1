@@ -1,0 +1,17 @@
+---
+layout: post
+title: Metropolis
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="b-lazy cover h-100 o-60 w-100" data-src="img/metropolis.jpg" style="background-color: #FFB700; background-position: center center; background-repeat: no-repeat; background-blend-mode: multiply;"></div>
+{% endcapture %}
+
+<div class="b--gold ba">
+  <div class="b--gold bw2 ba ma1">
+    <div class="b--gold ba bw1 ma1 relative">
+      {% include aspect_ratio.html content=content %}
+      <h2 class="absolute avenir bottom-0 f6 fw2-l fw4 gold left-1 tracked-mega ttu">Metropolis</h2>
+    </div>
+  </div>
+</div>

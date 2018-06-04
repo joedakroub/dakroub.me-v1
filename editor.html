@@ -1,0 +1,24 @@
+---
+layout: editor
+---
+<div class="dt dt--fixed h-100 w-100">
+  <div class="dtc v-top">
+    <textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="b--silver bg-near-white bb-0 bl-0 br bt-0 courier f6 h-100 input-reset pa3 near-black w-100" id="editor"></textarea>
+  </div>
+  <div class="dtc v-top">
+    <div class="h-100 overflow-auto w-100" id="canvas"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  let editor = document.getElementById('editor');
+  let canvas = document.getElementById('canvas');
+
+  editor.value = canvas.innerHTML;
+
+  editor.addEventListener('keyup', function(e) {
+    canvas.innerHTML = e.target.value;
+  });
+})()
+</script>

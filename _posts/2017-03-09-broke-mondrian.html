@@ -1,0 +1,63 @@
+---
+layout: post
+title: Broke Mondrian
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="ba bw2 bw3-ns cf h-100">
+  <div class="fl h-100 w-90">
+    <div class="bb bw2 bw3-ns cf h-10">
+      <div class="bg-moon-gray br bw2 bw3-ns fl h-100 w-30"></div>
+      <div class="bg-white br bw2 bw3-ns fl h-100 w-40"></div>
+      <div class="bg-yellow fl h-100 w-30"></div>
+    </div>
+    <div class="cf h-90">
+      <div class="br bw2 bw3-ns fl h-100 w-15">
+        <div class="bb bg-white bw2 bw3-ns h-30"></div>
+        <div class="bb bg-moon-gray bw2 bw3-ns h-40"></div>
+        <div class="bg-yellow h-30"></div>
+      </div>
+      <div class="fl h-100 w-85">
+        <div class="bb bw2 bw3-ns cf h-55">
+          <div class="bg-dark-red br bw2 bw3-ns fl h-100 w-65"></div>
+          <div class="bb bg-yellow bw2 bw3-ns fl h-50 w-35"></div>
+          <div class="bg-white fl h-50 w-35">
+            <div class="br bw2 bw3-ns h-100 w-50"></div>
+          </div>
+        </div>
+        <div class="cf h-45">
+          <div class="br bw2 bw3-ns fl h-100 w-35">
+            <div class="bb bg-black bw2 bw3-ns h-75"></div>
+            <div class="bg-white h-25"></div>
+          </div>
+          <div class="fl h-100 w-65">
+            <div class="bb bw2 bw3-ns cf h-90">
+              <div class="br bw2 bw3-ns fl h-100 w-45">
+                <div class="bb bg-moon-gray bw2 bw3-ns h-45"></div>
+                <div class="bb bg-moon-gray bw2 bw3-ns h-40"></div>
+                <div class="bg-black h-15"></div>
+              </div>
+              <div class="fl h-100 w-55">
+                <div class="bg-white bb bw2 bw3-ns h-45 w-100"></div>
+                <div class="bg-dark-blue h-55 w-100"></div>
+              </div>
+            </div>
+            <div class="bg-white h-10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bl bw2 bw3-ns fl h-100 w-10">
+    <div class="bg-moon-gray h-75"></div>
+    <div class="bg-dark-red bt bw2 bw3-ns h-25"></div>
+  </div>
+</div>
+{% endcapture %}
+
+{%
+  include aspect_ratio.html
+  aspect-ratio="1x1"
+  content=content
+%}
+<h2 class="tc">Broke Mondrian</h2>

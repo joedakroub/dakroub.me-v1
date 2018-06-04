@@ -1,0 +1,70 @@
+---
+layout: post
+media: Tachyons CSS, Raw CSS
+title: Introduction to the Study of Religion
+description: "Beautifully skewed color bars. Clean and direct design."
+image: introduction-to-the-study-of-religion.png
+image_alt: "Red, yellow, hot pink color blocks, some skewed, on a white background."
+---
+{% capture content %}
+<div class="dt dt--fixed h-100 overflow-hidden w-100">
+  <div class="dt-row">
+    <div class="bg-red dtc"></div>
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-red dtc"></div>
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-red dtc"></div>
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-red dtc"></div>
+    <div class="bg-yellow dtc"></div>
+  </div>
+  <div class="bg-hot-pink dt-row">
+    <div class="bg-hot-pink dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+  </div>
+  <div class="dt-row">
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-white dtc"></div>
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-white dtc"></div>
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-white dtc"></div>
+    <div class="bg-yellow dtc"></div>
+    <div class="bg-white dtc"></div>
+  </div>
+  <div class="bg-hot-pink dt-row">
+    <div class="bg-red dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-red dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+    <div class="bg-hot-pink dtc" style="transform: skew(25deg, 0) translateX(50%);"></div>
+  </div>
+  <div class="bg-red dt-row">
+    <div class="bg-red" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-yellow dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-yellow dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-yellow dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-red" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+    <div class="bg-yellow dtc" style="transform: skew(-25deg, 0) translateX(-50%);"></div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white pa4-ns pa3">
+  <header class="near-black">
+    <h2 class="avenir f-subheadline-l f1-m f2 fw5 ma0 mb2 lh-solid tracked-tight ttu">Introduction <br>to the Study <br>of Religion</h2>
+    <h3 class="avenir f2-l f3-m f4 fw4 ma0 mb1 tracked-tight ttu">T. William Hall, <span class="ttl">General Editor</span></h3>
+  </header>
+  {% include aspect_ratio.html aspect-ratio="3x4" content=content %}
+</div>

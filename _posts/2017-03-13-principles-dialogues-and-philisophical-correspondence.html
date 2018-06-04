@@ -1,0 +1,39 @@
+---
+layout: post
+title: Principles, Dialogues, and Philisophical Correspondence
+media: Tachyons CSS
+---
+{% capture black_square %}
+<div class="bg-black dib h-two-thirds w-two-thirds"></div>
+{% endcapture %}
+
+{% capture content %}
+<div class="h-100 overflow-hidden w-100">
+  <div class="bg-near-black h-100 w-100">
+    <div class="dt h-100 rotate-315 w-100" style="transform: rotate(-45deg) scale(2);">
+      <div class="dt-row h-50">
+        <div class="bg-yellow dtc tc v-mid w-50">
+          {{ black_square }}
+        </div>
+        <div class="bg-hot-pink dtc tc v-mid w-50">
+          {{ black_square }}
+        </div>
+      </div>
+      <div class="dt-row h-50">
+        <div class="bg-hot-pink dtc tc v-mid w-50">
+          {{ black_square }}
+        </div>
+        <div class="bg-orange dtc tc v-mid w-50">
+          {{ black_square }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white pa3">
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+  <h3 class="avenir f1-ns f2 fw7 ma0 mb3 mt2 near-black">George Berkely:</h3>
+  <h3 class="avenir f2-ns f3 fw7 lh-title ma0 mb4 near-black">Principles,<br>Dialogues, and <br>Philisophical <br>Correspondence</h3>
+</div>

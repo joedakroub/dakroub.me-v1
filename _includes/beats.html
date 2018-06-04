@@ -1,0 +1,6 @@
+{% assign height = include.height | default: 'h4' %}
+
+<div class="b--yellow bl bt bw5-ns bw4 bg-white">
+  <h2 class="ma0 mb3 tracked ttu">Fresh Beats</h2>
+  <iframe class="b-lazy {{ height }} mb2 w-100" frameborder="0" src="{{ include.url | default: ' ' }}"></iframe>
+</div>

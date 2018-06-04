@@ -1,0 +1,19 @@
+---
+layout: post
+media: Tachons CSS, Raw CSS
+title: Ditto
+---
+{% capture ditto %}
+<!-- Ditto -->
+<dl class="courier f5-ns f6 ma0 pa0">
+  <dt class="fl pb2 pr3 ttu w-5">Ditto</dt>
+  <dd class="lh-solid ma0 pa0">A method of reproduction by dye-transfer process; like hektoing (and hekto carbons are used to make the master) but using a dye solvent instead of a gelatin transfer medium. Moistened sheets are pressed against the master, and take up enough of the pigment to make a good copy. The ditto machine costs more than mimeos of comparable quality, but cost per page of reproduction is less. Besides the reproduction-range up to 300 copies because no ink is wasted, there is the further advantage that come copies may be run off now and others week. <mark class="bg-yellow o-50">Ditto is usually in purple</mark> (colors are available, as below) and on smooth-surfaced paper; this is a specimen of it. Oh, and Laney called Walter A. Coslet's spiritduplicating plant a Dittorium, tho Coslet's ditto is actually a Wolber machine.</dd>
+</dl>
+{% endcapture %}
+
+<div class="bg-near-white pa4">
+  <div class="relative" style="transform: rotate(-0.45deg)">
+    <div class="o-70 purple">{{ ditto }}</div>
+    <div class="absolute light-purple o-40 top-0" style="transform: translateX(1.25px);">{{ ditto }}</div>
+  </div>
+</div>

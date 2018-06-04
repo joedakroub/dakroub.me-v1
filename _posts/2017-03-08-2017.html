@@ -1,0 +1,24 @@
+---
+layout: post
+title: 2017
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="bg-blue br-100 center h-100 w-100">
+  <div class="dt h-100 w-100">
+    <div class="dtc v-mid">
+      <div class="bg-black br-100 center dt h-50 w-50">
+        <h2 class="dark-red dtc f2-ns f3 fw2 ma0 tc v-mid">2017</h2>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-white dt overflow-hidden relative w-100">
+  <div class="dtc h5 pa3 v-mid">
+    <div class="ml6 ml7-ns w-50-ns w-two-thirds">
+      {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+    </div>
+  </div>
+</div>

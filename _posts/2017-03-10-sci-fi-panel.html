@@ -1,0 +1,29 @@
+---
+layout: post
+title: 'Sci-Fi Panel'
+media: Tachyons CSS
+---
+{% capture content %}
+<div class="absolute right-0 top-0">
+  <span class="bg-pink dib h2 h3-l w1 w2-l mr2 mr3-l"></span>
+  <span class="bg-pink dib h2 h3-l w1 w2-l mr2 mr3-l"></span>
+</div>
+<div class="absolute bottom-0 left-0">
+  <span class="bg-black dib h3 h4-l w1 w2-l mr2 mr3-l"></span>
+  <span class="bg-black dib h3 h4-l w1 w2-l mr2 mr3-l"></span>
+  <span class="bg-black dib h3 h4-l w1 w2-l"></span>
+</div>
+{% endcapture %}
+
+<div class="bg-blue pv4 pv5-l">
+  <div class="b--white bw3 bw4-l bb-0 bl-0 br-0 bt mb5 mb6-ns mh4 mh5-ns">
+    <div class="b--white bw4 bw5-l bb-0 bl br-0 bt-0">
+      <div class="b--black bw4 bw5-l bb-0 bl-0 br bt-0">
+        <div class="b--black bw3 bw4-l bb bl-0 br-0 bt-0 pv2 pv3-l ph3 ph4-l relative">
+          {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="b--light-blue b bt bw2 bw3-l f2-ns f3 light-blue mv4 mv5-ns ph4 ph5-ns pt3">{{ page.title }} #1</h2>
+</div>

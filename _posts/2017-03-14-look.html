@@ -1,0 +1,16 @@
+---
+layout: post
+title: Look
+media: Tachyons CSS
+---
+<div class="bg-black cf">
+{% for i in (1..20) %}
+<div class="b--white bb h2"></div>
+  {% if i == 6 %}
+  <h2 class="avenir f-headline-l f-subheadline fw9 white">Look.</h2>
+  {% endif %}
+  {% if i == 13 %}
+  {% include image.html class="fr w5" src="img/cute-baby.png" %}
+  {% endif %}
+{% endfor %}
+</div>

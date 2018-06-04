@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Remember the '70s"
+media: Tachyons CSS
+---
+
+{% capture child_content %}
+<div class="absolute absolute--fill bg-black-60"></div>
+{% endcapture %}
+
+{% capture inner_content %}
+<div class="bg-yellow br-100 h-100 rotate-135 w-100">
+  <div class="bg-orange br-100 center h-two-thirds w-two-thirds">
+    <div class="bg-dark-red br-100 center h-two-thirds w-two-thirds">
+      <div class="bg-gold br-100 center h-two-thirds overflow-hidden relative w-two-thirds">
+        {% include aspect_ratio.html aspect-ratio="1x1" content=child_content %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+{% capture content %}
+<div class="absolute absolute--fill bg-black-60 b--dark-red bl bw4 bw5-ns">
+  <div class="b--orange bl bw4 bw5-ns h-100">
+    <div class="b--yellow bl bw4 bw5-ns dt h-100 pa5 w-100">
+      <div class="dtc v-mid">
+        {% include aspect_ratio.html aspect-ratio="1x1" content=inner_content %}
+      </div>
+    </div>
+    <h2 class="absolute bottom-0 f3-ns f6 fw9 dark-red right-1 ttl">Remember the '70s</h2>
+  </div>
+</div>
+{% endcapture %}
+
+<div class="bg-gold relative">
+  {% include aspect_ratio.html aspect-ratio="1x1" content=content %}
+</div>
