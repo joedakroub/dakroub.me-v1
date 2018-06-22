@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Joe Dakroub | Digital Creator and Problem Solver
-email: company@handwhittled.com
+email: joe.dakroub@me.com
 linkedin_url:  https://www.linkedin.com/in/joe-dakroub/
 github_url:  https://github.com/joedakroub
 permalink: /:title.html
