@@ -1,5 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
-https://happy-panini-9aa538.netlify.com/* https://v1.dakroub.me/:splat 301!
+https://dakroub-v1.netlify.com/* https://v1.dakroub.me/:splat 301!
 
 # These extra rules are required because HTTPS is not forced
-http://happy-panini-9aa538.netlify.com/* https://v1.dakroub.me/:splat 301!
+http://dakroub-v1.netlify.com/* https://v1.dakroub.me/:splat 301!
